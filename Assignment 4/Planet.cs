@@ -8,7 +8,7 @@ using System.Text;
  * Date: July 23, 2017
  * Description: This is the abstract class Planet which other subclasses will
  * derive from.
- * Version: 0.3 - Added the Public Constuctor to the Planet abstract class
+ * Version: 0.3 - Added the ToString to the Planet abstract class
  */
 
 namespace Assignment_4
@@ -44,6 +44,11 @@ namespace Assignment_4
             this.Mass = mass;
         }
 
-        // PUBLIC ABSTRACT METHODS
+        // PUBLIC METHODS
+
+        public override string ToString()
+        {
+            return string.Format("Name: {0}, diameter: {1}, Mass: {2}", Name,Diameter,Mass);
+        }
     }
 }
