@@ -8,7 +8,7 @@ using System.Text;
  * Date: July 23, 2017
  * Description: This is the abstract class Planet which other subclasses will
  * derive from.
- * Version: 0.1 - Added the Private Fields
+ * Version: 0.2 - Added the Public Properties
  */
 
 namespace Assignment_4
@@ -26,6 +26,14 @@ namespace Assignment_4
         private double _rotationPeriod;
 
         // PUBLIC PROPERTIES
+
+        public double Diameter { get; }
+        public double Mass { get; }
+        public int MoonCount { get; set; }
+        public string Name { get; }
+        public double OrbitalPeriod { get; set; }
+        public int RingCount { get; set; }
+        public double RotationPeriod { get; set; }
 
         // CONSTRUCTORS
 
