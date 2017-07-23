@@ -8,7 +8,7 @@ using System.Text;
  * Date: July 23, 2017
  * Description: This is the abstract class Planet which other subclasses will
  * derive from.
- * Version: 0.2 - Added the Public Properties
+ * Version: 0.3 - Added the Public Constuctor to the Planet abstract class
  */
 
 namespace Assignment_4
@@ -36,6 +36,13 @@ namespace Assignment_4
         public double RotationPeriod { get; set; }
 
         // CONSTRUCTORS
+
+        public Planet(string name, double diameter, double mass)
+        {
+            this.Name = name;
+            this.Diameter = diameter;
+            this.Mass = mass;
+        }
 
         // PUBLIC ABSTRACT METHODS
     }
