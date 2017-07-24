@@ -18,8 +18,25 @@ namespace Assignment_4
         // PRIVATE INSTANCE VARIABLES
 
         private string _type;
-             
+
         // PUBLIC PROPERTIES
+
+        public bool HasMoons
+        {
+            get
+            {
+                if (MoonCount > 0)
+                {
+                    return true;
+                }
+                else false;
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
 
         // CONSTRUCTORS
 
