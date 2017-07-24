@@ -5,6 +5,7 @@ using System.Text;
 
 /*
  * Name: Abubakir Myrzaly
+ * StudentID: 300931945
  * Date: July 23, 2017
  * Description: This is the abstract class Planet which other subclasses will
  * derive from.
