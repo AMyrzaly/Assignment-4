@@ -8,7 +8,7 @@ using System.Text;
  * Date: July 23, 2017
  * Description: This is the GiantPlanet class which is subclass of derive class. 
  * The class will also implement both the IHasMoons and IHasRings interfaces.
- * Version: 0.2 - Added the constructor
+ * Version: 0.3 - Added interfaces methods(doesn't work)
  */
 
 namespace Assignment_4
@@ -30,6 +30,22 @@ namespace Assignment_4
                     return true;
                 }
                 else false;
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public bool HasRings
+        {
+            get
+            {
+                if (RingCount > 0)
+                {
+                    return true;
+                }
             }
 
             set
