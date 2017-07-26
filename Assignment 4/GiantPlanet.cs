@@ -9,7 +9,7 @@ using System.Text;
  * Date: July 23, 2017
  * Description: This is the GiantPlanet class which is subclass of derive class. 
  * The class will also implement both the IHasMoons and IHasRings interfaces.
- * Version: 0.3 - Added interfaces methods(doesn't work)
+ * Version: 0.4 - Made changes in interface (doesn't work)
  */
 
 namespace Assignment_4
@@ -30,12 +30,12 @@ namespace Assignment_4
                 {
                     return true;
                 }
-                else false;
+                else return false;
             }
 
             set
             {
-                throw new NotImplementedException();
+                this._type = value;
             }
         }
 
