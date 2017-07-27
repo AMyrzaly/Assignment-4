@@ -14,7 +14,7 @@ using System.Text;
 
 namespace Assignment_4
 {
-    public class TerrestrialPlanet : Planet , IHasMoons, IHasRings
+    public class TerrestrialPlanet : Planet , IHasMoons, IHabitable
     {
         // PRIVATE INSTANCE VARIABLES
 
@@ -39,11 +39,11 @@ namespace Assignment_4
             }
         }
 
-        public bool HasRings
+        public bool Habitable
         {
             get
             {
-                if (RingCount > 0)
+                if (_oxygen == 0)
                 {
                     return true;
                 }
