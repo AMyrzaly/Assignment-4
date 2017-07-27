@@ -9,7 +9,7 @@ using System.Text;
  * Date: July 24, 2017
  * Description: This is the TerrestrialPlanet class which is subclass of derive class. 
  * The class will also implement both the IHasMoons and IHasRings interfaces.
- * Version: 0.3 - Added the public properties
+ * Version: 0.4 - Correct error with interfaces
  */
 
 namespace Assignment_4
@@ -22,40 +22,6 @@ namespace Assignment_4
 
         // PUBLIC PROPERTIES
 
-        public bool HasMoons
-        {
-            get
-            {
-                if (MoonCount > 0)
-                {
-                    return true;
-                }
-                else return false;
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public bool Habitable
-        {
-            get
-            {
-                if (_oxygen == 0)
-                {
-                    return true;
-                }
-                else return false;
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
         // CONSTRUCTORS
 
         public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)
@@ -66,7 +32,15 @@ namespace Assignment_4
 
         // PRIVATE METHODS
 
+        public bool HasMoons()
+        {
+            return MoonCount > 0;
+        }
 
+        public bool Habitable()
+        {
+            return _oxygen;
+        }
 
         // PUBLIC METHODS
 

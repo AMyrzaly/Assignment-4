@@ -16,6 +16,6 @@ namespace Assignment_4
 {
     public interface IHasRings
     {
-        bool HasRings { get; set; }
+        bool HasRings();
     }
 }

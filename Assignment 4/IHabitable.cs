@@ -16,6 +16,6 @@ namespace Assignment_4
 {
     public interface IHabitable
     {
-        bool Habitable { get; set; }
+        bool Habitable();
     }
 }

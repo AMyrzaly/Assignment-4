@@ -16,6 +16,6 @@ namespace Assignment_4
 {
     public interface IHasMoons
     {
-        bool HasMoons { get; set; }
+        bool HasMoons();
     }
 }
