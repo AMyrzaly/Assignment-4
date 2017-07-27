@@ -9,7 +9,7 @@ using System.Text;
  * Date: July 24, 2017
  * Description: This is the TerrestrialPlanet class which is subclass of derive class. 
  * The class will also implement both the IHasMoons and IHasRings interfaces.
- * Version: 0.2 - Added the private instance and constructor
+ * Version: 0.3 - Added the public properties
  */
 
 namespace Assignment_4
@@ -22,7 +22,39 @@ namespace Assignment_4
 
         // PUBLIC PROPERTIES
 
+        public bool HasMoons
+        {
+            get
+            {
+                if (MoonCount > 0)
+                {
+                    return true;
+                }
+                else return false;
+            }
 
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public bool HasRings
+        {
+            get
+            {
+                if (RingCount > 0)
+                {
+                    return true;
+                }
+                else return false;
+            }
+
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
 
         // CONSTRUCTORS
 
