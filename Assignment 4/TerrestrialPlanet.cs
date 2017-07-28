@@ -22,6 +22,18 @@ namespace Assignment_4
 
         // PUBLIC PROPERTIES
 
+        public bool Oxygen
+        {
+            get
+            {
+                return _oxygen;
+            }
+            set
+            {
+                _oxygen = value;
+            }
+        }
+
         // CONSTRUCTORS
 
         public TerrestrialPlanet(string name, double diameter, double mass, bool oxygen)

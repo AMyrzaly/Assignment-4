@@ -17,17 +17,34 @@ namespace Assignment_4
     class Program
     {
         static void Main(string[] args)
-        {
-            GiantPlanet Mars = new GiantPlanet("Mars", 2500, 7500, "Gas");
-            Console.WriteLine(Mars.ToString());
+        { 
+            // creating objects
+            GiantPlanet Neptune = new GiantPlanet("Neptune", 49000, Math.Pow(10, 27), "Ice");
+            TerrestrialPlanet Earth = new TerrestrialPlanet("Earth", 12742, 5.972 * Math.Pow(10, 26), true);
 
-            TerrestrialPlanet Moon = new TerrestrialPlanet("Moon", 1250, 3000, true);
-            Console.WriteLine(Moon.ToString());
+            Console.WriteLine("Planets:");
+            Console.WriteLine(Earth.ToString());
+            Console.WriteLine(Neptune.ToString());
+
+            waitForAnyKey();
+
+            Console.WriteLine("\nGiant Planet");
+            Console.WriteLine(Neptune.ToString());
+            Neptune.RingCount = 0;
+            Console.WriteLine("HasRings: {0}", Neptune.HasRings());
+
+            Console.WriteLine("\nTerrestrial Planet");
+            Console.WriteLine(Earth.ToString());
+            Earth.Oxygen = true;
+            Console.WriteLine("Habitable: {0}", Earth.Habitable());
+            Earth.MoonCount = 1;
+            Console.WriteLine("HasMoons: {0}", Earth.HasMoons());
+
         }
 
         static void waitForAnyKey()
         {
-
+            Console.ReadKey();
         }
     }
 }
